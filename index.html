@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Jeje</title>
+
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(98, 177, 255);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .card {
+            min-height: 50%;
+            width: 80%;
+            background-color: azure;
+            border-radius: 20px;
+        }
+
+        h1, h3{
+            text-align: center;
+            padding-block: 10px;
+        }
+
+        .but{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-block: 10px;
+
+        }
+
+        button{
+            height: 40px;
+            min-width: 40%;
+            background-color: rgb(107, 107, 229);
+            color: white;
+            padding-block: 10px;
+            border: 0;
+            border-radius: 7px;
+            font-weight: bold;
+            justify-items: center;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        img {
+            width: 25%;
+            padding-block: 10px;
+            border-radius: 30px;
+        }
+
+        .awal {
+            width: 100%;
+        }
+
+        .kedua {
+            width: 100%;
+            display: none;
+        }
+
+        .ketiga {
+            width: 100%;
+            display: none;
+        }
+
+        .keempat {
+            width: 100%;
+            display: none;
+        }
+
+        .kelima {
+            width: 100%;
+            display: none;
+        }
+        
+        .keenam {
+            width: 100%;
+            display: none;
+        }
+
+        .ketuju {
+            width: 100%;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="awal">
+            <h1>Haloo Jeje &#128075;</h1>
+            <h3>Kamu tau ngga apa yang lebih keren dari cewek SMK akuntansi??</h3>
+            <div class="but">
+                <button onclick="first()">Jeje Jelek</button>
+            </div>
+            <h3>Klik Jeje Jelek Kalo Mau Tau Jawabannya &#128074;</h3>
+        </div>
+
+        <div class="kedua">
+            <div class="but" >
+                <img src="mnt.png" alt="Jelek">
+            </div>
+            <h3>Eits Bukan Ini Yaa</h3>
+            <div class="but">
+                <button onclick="second()">Terus Yang Mana?? &#129300;</button>
+            </div>
+        </div>
+
+        <div class="ketiga">
+            <h1>Pokoknya Salah Satu Orang Terpenting Buat Mamat Selain Keluarga Mamat &#128513;</h1>
+            <div class="but">
+                <button onclick="third()">Apa Lagi</button>
+            </div>
+        </div>
+
+        <div class="keempat">
+            <h1>Orang yang Selalu Ada Buat Mamat</h1>
+            <div class="but">
+                <button onclick="four()">Apa Lagi Nihh</button>
+            </div>
+        </div>
+
+        <div class="kelima">
+            <h1>Orang Baik yang Selalu Ceria Dimana Aja &#128511;</h1>
+            <div class="but">
+                <button onclick="five()">Siapa Sih!!</button>
+            </div>
+        </div>
+
+        <div class="keenam">
+            <div class="but" >
+                <img src="jejee.jpg" alt="jejeee">
+            </div>
+            <h1>Yeayy &#128525; &#128525; &#128525; </h1>
+            <div class="but">
+                <button onclick="six()">Klik Dong Sayang</button>
+            </div>
+        </div>
+        
+        <div class="ketuju">
+            <h3>Maafin Mamat Ya Sayang</h3>
+            <div class="but" >
+                <img src="cute.gif" alt="jejeee">
+            </div>
+            <h1>Kamu Tetep Paling Keren Di Hati Mamat</h1>
+        </div>
+    </div >
+
+    <script>
+        function first() {
+            const awal = document.querySelector('.awal');
+            awal.style.display = "none";
+
+            const kedua = document.querySelector('.kedua');
+            kedua.style.display = "block";
+        };
+        
+        function second() {
+            const kedua = document.querySelector('.kedua');
+            kedua.style.display = "none";
+
+            const ketiga = document.querySelector('.ketiga');
+            ketiga.style.display = "block";
+        };
+
+        function third() {
+            const ketiga = document.querySelector('.ketiga');
+            ketiga.style.display = "none";
+
+            const keempat = document.querySelector('.keempat');
+            keempat.style.display = "block";
+        };
+
+        function four() {
+            const keempat = document.querySelector('.keempat');
+            keempat.style.display = "none";
+
+            const kelima = document.querySelector('.kelima');
+            kelima.style.display = "block";
+        };
+
+        function five() {
+            const kelima = document.querySelector('.kelima');
+            kelima.style.display = "none";
+
+            const keenam = document.querySelector('.keenam');
+            keenam.style.display = "block";
+        };
+
+        function six() {
+            const keenam = document.querySelector('.keenam');
+            keenam.style.display = "none";
+
+            const ketuju = document.querySelector('.ketuju');
+            ketuju.style.display = "block";
+        };
+
+    </script>
+</body>
+</html>
